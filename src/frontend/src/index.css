@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+
+    /* ── Temple Color Palette (OKLCH) ── */
+    --background: 0.96 0.03 82;
+    --foreground: 0.22 0.05 30;
+    --card: 0.99 0.01 80;
+    --card-foreground: 0.22 0.05 30;
+    --popover: 0.99 0.01 80;
+    --popover-foreground: 0.22 0.05 30;
+    --primary: 0.38 0.14 22;
+    --primary-foreground: 0.98 0 0;
+    --secondary: 0.91 0.05 78;
+    --secondary-foreground: 0.38 0.14 22;
+    --muted: 0.91 0.04 80;
+    --muted-foreground: 0.5 0.05 40;
+    --accent: 0.63 0.19 52;
+    --accent-foreground: 0.98 0 0;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.84 0.06 75;
+    --input: 0.91 0.04 80;
+    --ring: 0.38 0.14 22;
+
+    /* ── Sidebar ── */
+    --sidebar: 0.96 0.03 82;
+    --sidebar-foreground: 0.22 0.05 30;
+    --sidebar-primary: 0.38 0.14 22;
+    --sidebar-primary-foreground: 0.98 0 0;
+    --sidebar-accent: 0.91 0.04 80;
+    --sidebar-accent-foreground: 0.22 0.05 30;
+    --sidebar-border: 0.84 0.06 75;
+    --sidebar-ring: 0.38 0.14 22;
+
+    /* Charts */
+    --chart-1: 0.63 0.19 52;
+    --chart-2: 0.38 0.14 22;
+    --chart-3: 0.78 0.14 78;
+    --chart-4: 0.55 0.16 35;
+    --chart-5: 0.7 0.18 65;
+
+    /* ── Direct Color Tokens ── */
+    --color-maroon: oklch(0.38 0.14 22);
+    --color-maroon-dark: oklch(0.26 0.12 22);
+    --color-maroon-mid: oklch(0.44 0.13 22);
+    --color-saffron: oklch(0.63 0.19 52);
+    --color-saffron-light: oklch(0.78 0.14 60);
+    --color-saffron-pale: oklch(0.92 0.08 70);
+    --color-cream: oklch(0.96 0.03 82);
+    --color-cream-dark: oklch(0.91 0.05 78);
+    --color-gold: oklch(0.78 0.14 78);
+    --color-text-dark: oklch(0.22 0.05 30);
+    --color-text-muted: oklch(0.5 0.05 40);
+  }
+
+  * {
+    @apply border-border;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", "Noto Sans Devanagari", system-ui, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Playfair Display", "Noto Sans Devanagari", Georgia, serif;
+  }
+
+  .font-hindi {
+    font-family: "Noto Sans Devanagari", system-ui, sans-serif;
+  }
+
+  .font-heading {
+    font-family: "Playfair Display", Georgia, serif;
+  }
+}
